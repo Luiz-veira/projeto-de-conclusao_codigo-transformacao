@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>HTML, CSS, JavaScript e Python</title>
+</head>
+<body>
+    <header>
+        <h1>HTML, CSS, JavaScript e Python</h1>
+    </header>
+
+    <nav class="botao">
+        <section class="botoes">
+            <button id="html">HTML</button>
+            <button id="css">CSS</button>
+            <button id="js">JavaScript</button>
+            <button id="py">Python</button>
+        </section>
+
+        <section>
+            <img src="x.png" alt="" width="35">
+            <img src="quadrado.png" alt="" width="35">
+        </section>
+    </nav>
+
+    <main>
+        <!-- <section class="botao">
+            <button id="html">HTML</button>
+            <button id="css">CSS</button>
+            <button id="js">JavaScript</button>
+            <button id="py">Python</button>
+        </section> -->
+
+        <section id="container-html">
+            <h2>HTML (HyperText Markup Language)</h2>
+            <p>HTML, ou Linguagem de Marcação de Hipertexto, é o principal componente na criação de páginas da web. Ele funciona
+                como a estrutura básica de um site, organizando o conteúdo através de <em>tags</em>, que são comandos especiais
+                envoltos em <code>&lt;&gt;</code> e <code>&lt;/&gt;</code>.
+            </p>
+            <p>Por exemplo, uma tag como <code>&lt;h1&gt;</code> define um título principal, enquanto <code>&lt;p&gt;</code>
+                cria parágrafos.
+            </p>
+            <p>HTML não controla o design ou a funcionalidade da página, mas define o que será exibido: texto, imagens, vídeos e
+                links. Ele também é essencial para tornar o conteúdo acessível e semântico.
+            </p>
+
+            <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Minha Página&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Bem-vindo!&lt;/h1&gt;
+            &lt;p&gt;Esta é uma página criada com HTML.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+            </pre>
+
+        </section>
+
+        <section id="container-css">
+            <h2>CSS (Cascading Style Sheets)</h2>
+            <p>CSS, ou Folhas de Estilo em Cascata, é o que dá personalidade a uma página da web. Ele permite estilizar os
+                elementos definidos pelo HTML, adicionando cores, fontes, tamanhos e até animações. Com CSS, um site que era
+                apenas funcional se torna visualmente atraente e envolvente.
+            </p>
+            <p>Existem três maneiras principais de aplicar CSS:</p>
+            <ul>
+                <li><strong>Inline:</strong> diretamente no elemento HTML (não recomendado para projetos grandes).</li>
+                <li><strong>Interno:</strong> em um bloco <code>&lt;style&gt;</code> dentro da página.</li>
+                <li><strong>Externo:</strong> em um arquivo separado, ligado ao HTML.</li>
+            </ul>
+            <pre>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+            </pre>
+        </section>
+        
+        <section id="container-js">
+            <h2>JavaScript</h2>
+                <p>JavaScript é a linguagem que transforma páginas estáticas em experiências dinâmicas. É o motor que permite a
+                    interação do usuário com elementos da página. Por exemplo, com JavaScript, você pode criar menus que se
+                    expandem, validar formulários antes de serem enviados e até construir jogos diretamente no navegador.
+                </p>
+                <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt;Interatividade&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1 id="titulo"&gt;Clique no botão!&lt;/h1&gt;
+            &lt;button onclick="mudarTexto()"&gt;Clique aqui&lt;/button&gt;
+
+            &lt;script&gt;
+                function mudarTexto() {
+                document.getElementById("titulo").innerText = "Você clicou no botão!";
+                }
+            &lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+                </pre>
+        </section>
+        
+        <section id="container-py">
+            <h2>Python</h2>
+            <p>Python é uma linguagem de programação versátil, conhecida por sua simplicidade e legibilidade. Embora não seja
+                usada diretamente no navegador, Python desempenha um papel importante no desenvolvimento web como linguagem de
+                back-end, além de ser muito popular em áreas como ciência de dados, aprendizado de máquina e automação.
+            </p>
+            <p>Um exemplo simples de Python no contexto web usando Flask:</p>
+            <pre>
+        from flask import Flask
+
+        app = Flask(__name__)
+
+        @app.route("/")
+        def home():
+            return "Bem-vindo à minha aplicação web!"
+
+        if __name__ == "__main__":
+            app.run(debug=True)
+            </pre>
+        </section>
+    </main>
+
+    <footer>
+        Desenvolvido por: Luiz Fernando de Oliveira - 2024@
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

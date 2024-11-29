@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html{
+    /* background-image: linear-gradient(to top, #ffa033, #306998, #4DAFFF, #F7DF1E); */
+    background-image: url(hello-world.gif);
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-attachment: fixed; 
+    /* background-size: cover; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    width: 80vw;
+    margin: auto;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d07d0a;
+    padding: 1em;
+}
+
+nav{
+    width: 80vw;
+    background-color: #d07d0a;
+    /* #FFD700 */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    box-shadow: 3px 2px 7px #000;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    /* margin: 1em; */
+    margin-right: 2em;
+    width: 7em;
+    border-radius: 1em;
+    border: 1px solid #d07d0a;
+    background-color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#html:hover{
+    background-color: #ffa033;
+    /* #FF5733 */
+    /* #E44D26 */
+    transition: 0.5s;
+    color: #fff;
+}
+
+#css:hover{
+    background-color: #4DAFFF;
+    /* #2965F1 */
+    /* #1572B6 */
+    /* #4DAFFF */
+    transition: 0.5s;
+    color: #fff;
+}
+
+#js:hover{
+    background-color: #F7DF1E;
+    /* #FFD43B */
+    transition: 0.5s;
+    color: #fff;
+}
+
+#py:hover{
+    background-color: #306998;
+    transition: 0.5s;
+    color: #fff;
+}
+
+main{
+    width: 80vw;
+    margin: auto;
+    background-color: white;
+    box-shadow: 3px 1px 7px #000;
+    padding: 1em;
+}
+
+h2{
+    border-bottom: 2px solid #d07d0a;
+    margin-bottom: 1em;
+}
+
+ul{
+    margin-left: 1em;
+    margin-top: 0.5em;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-top: 2em;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+}
+
+footer{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-top: 2em;
+    background-color: #fff;
+    box-shadow: 3px 3px 7px #000;
+}
